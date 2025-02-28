@@ -3,7 +3,7 @@ var searchInsert = function(nums, target) {
     let right = nums.length - 1;
 
     while (left <= right) {
-        let mid = Math.floor((left + right) / 2);
+        let mid = Math.floor((left + right) / 2); // คำนวนค่า mid โดยใช้ Math.floor ให้ได้ค่าจำนวนเต็ม แล้วไปเช็คเงื่อนไขต่อ
         if (nums[mid] === target) {
             return mid;
         } else if (nums[mid] < target) {
@@ -17,3 +17,5 @@ var searchInsert = function(nums, target) {
 
 
 console.log(searchInsert([1, 3, 5, 6], 5));
+
+
